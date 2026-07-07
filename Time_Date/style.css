@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #858484;
+    font-size: 60.5%;
+}
+
+body {
+    height: 100vh;
+    background-color: #363a4a;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    max-width: 1400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clockHolder ,.dateHolder {
+    margin-top: 50px;
+    width: 76rem;
+    background-color: #1b252a;
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: 3px solid #f5ee62;
+    box-shadow: rgba(222, 238, 42, 0.1) 0px 4px 6px;
+    position: relative;
+}
+
+.clockHolder::after {
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 70%;
+    height: 15px;
+    background-color: #f5ee62;
+    transform: translate(-50%, 0);
+    border-radius: 3px 3px 8px 8px;
+}
+
+.clockHolder::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 10px;
+    background-color: #f5ea4b77;
+    bottom: -25px;
+    left: -5%;
+    border-radius: 100%;
+    filter: blur(5px);
+}
+
+.dateHolder::after {
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 70%;
+    height: 15px;
+    background-color: #f5ee62;
+    transform: translate(-50%, 0);
+    border-radius: 3px 3px 8px 8px;
+}
+
+.dateHolder::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 10px;
+    background-color: #f5ea4b77;
+    bottom: -25px;
+    left: -5%;
+    border-radius: 100%;
+    filter: blur(5px);
+}
+
+.timeHolder,.dateHolder {
+    display: flex;
+    gap: 4.2rem;
+    align-items: center;
+}
+
+.timeOptions, .dateOptions {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    color: aliceblue;
+    font-size: xxx-large;
+}
+
+.mainClock,.mainDate {
+    width: 100%;
+    text-align: center;
+}
+
+#clock, #date {
+    font-size: 9.8rem;
+    
+}
+#date{
+    color: rgb(244, 221, 221);
+}
+
