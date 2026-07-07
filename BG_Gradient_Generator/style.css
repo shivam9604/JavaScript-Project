@@ -1,0 +1,39 @@
+
+body{
+    width: auto;
+    height: 100vh;
+    margin: 10rem;
+    background-image: linear-gradient(to right, #4c51e1, #f69d3c);
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 5px 30px;
+    
+    background-color:  rgb(172, 186, 255);
+    height: 30px;
+    width: 150px;
+    border-radius: 50px;
+    box-shadow: 1px 5px 5px rgba(136, 193, 255, 0.662);
+    border-color: rgb(0, 13, 255);
+    /* border:2mm ridge rgba(119, 247, 0, 0.675); */
+}
+h2{
+    margin-top: 50px;
+    font-size: small;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+.copyCode{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(67, 69, 69, 0.179);
+    border-radius: 10px;
+   
+}
+.copyCode:hover{
+    cursor: pointer;
+    color: white;
+    
+}
